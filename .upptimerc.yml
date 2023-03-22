@@ -11,7 +11,7 @@ status-website:
   cname: status.imagix.tech
   theme: night
   css: ":root{ --up-border-left-color: #4cffaa; --down-border-left-color: #eb8799; } article.up { border-left: 0.7rem solid; } article.down { border-left: 0.7rem solid; }"
-  logoUrl: https://raw.githubusercontent.com/imagix-tech/status/master/xaonix.svg
+  logoUrl: https://raw.githubusercontent.com/imagix-tech/status/master/imagix.svg
   name: Status Page
   introTitle: "**Welcome** to the services Status Page"
   introMessage: Please, visit this page whenever you want to check the status of IMAGIX services and apps. Here we will also publish information about **scheduled maintenance**.
