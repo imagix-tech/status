@@ -4,6 +4,10 @@ repo: status
 sites:
   - name: Website
     url: https://imagix.tech
+  - name: MQTT Server  
+    check: "tcp-ping"
+    url: $MQTT_SERVER
+    port: 8884
     
 status-website:
   favicon: https://raw.githubusercontent.com/imagix-tech/status/master/favicon.png
