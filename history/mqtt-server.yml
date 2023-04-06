@@ -1,7 +1,7 @@
 url: $MQTT_SERVER
 status: up
 code: 200
-responseTime: 34
-lastUpdated: 2023-04-05T23:07:54.363Z
+responseTime: 35
+lastUpdated: 2023-04-06T23:09:41.687Z
 startTime: Wed Mar 22 2023 23:06:22 GMT+0000 (Coordinated Universal Time)
 generator: Upptime <https://github.com/upptime/upptime>
