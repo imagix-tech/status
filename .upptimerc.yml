@@ -10,38 +10,18 @@ sites:
     check: "tcp-ping"
     url: dns1.xaonix.com
     port: 53
-  - name: DNS 1 (IPv6)
-    check: "tcp-ping"
-    url: dns1.xaonix.com    
-    port: 53    
-    ipv6: true
   - name: DNS 2
     check: "tcp-ping"
     url: dns2.xaonix.com
     port: 53 
-  - name: DNS 2 (IPv6)
-    check: "tcp-ping"
-    url: dns2.xaonix.com
-    port: 53
-    ipv6: true
   - name: DNS 3
     check: "tcp-ping"
     url: 177.12.162.2
     port: 53
-  - name: DNS 3 (IPv6)
-    check: "tcp-ping"
-    url: 177.12.162.2
-    port: 53
-    ipv6: true
   - name: DNS 4
     check: "tcp-ping"
     url: 177.12.162.3
     port: 53
-  - name: DNS 4 (IPv6)
-    check: "tcp-ping"
-    url: 177.12.162.3
-    port: 53
-    ipv6: true
     
 status-website:
   favicon: https://raw.githubusercontent.com/imagix-tech/status/master/favicon.png
