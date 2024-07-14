@@ -1,29 +1,44 @@
 # Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: imagix-tech # Your GitHub organization or username, where this repository lives
+repo: status # The name of this repository
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
+  - name: Website
+    url: https://imagix.tech
+  - name: Webmail
+    url: https://webmail.imagix.tech
+  - name: Labs
+    url: http://labs.imagix.tech:8080
+  - name: ODIN LB (Homologation)
+    url: $ODIN_HOMOLOGACAO_LB
+  - name: VPN (Homologation)
+    url: $BIFROST_HOMOLOGACAO
     check: "tcp-ping"
-    ipv6: true
+  - name: DNS 1
+    check: "tcp-ping"
+    url: dns1.xaonix.com
+    port: 53
+  - name: DNS 2
+    check: "tcp-ping"
+    url: dns2.xaonix.com
+    port: 53
+  - name: DNS 3
+    check: "tcp-ping"
+    url: dns3.xaonix.com
+    port: 53
+  - name: DNS 4
+    check: "tcp-ping"
+    url: dns4.xaonix.com
+    port: 53
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
+  cname: status.imagix.tech
+  # baseUrl: /
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
+  favicon: https://raw.githubusercontent.com/imagix-tech/status/master/favicon.ico
+  name: IMAGIX Status Page
   introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
   introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
   navbar:
