@@ -9,13 +9,13 @@ sites:
     url: https://webmail.imagix.tech
   - name: Labs
     url: http://labs.imagix.tech:8080
-  - name: ODIN LB (Homologation)
-    check: "tcp-ping"
-    url: $ODIN_HOMOLOGACAO_LB    
-    port: 1194
+  - name: ODIN LB (Homologation)    
+    url: $ODIN_HOMOLOGACAO_LB        
+    __dangerous__insecure: true
   - name: VPN (Homologation)
-    url: $BIFROST_HOMOLOGACAO
     check: "tcp-ping"
+    url: $BIFROST_HOMOLOGACAO
+    port: 1194    
   - name: DNS 1
     check: "tcp-ping"
     url: dns1.xaonix.com
@@ -38,7 +38,7 @@ status-website:
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   cname: status.imagix.tech
   # baseUrl: /
-  theme: dark
+  theme: light
   logoUrl: https://raw.githubusercontent.com/imagix-tech/status/master/imagix.svg
   favicon: https://raw.githubusercontent.com/imagix-tech/status/master/favicon.ico
   faviconSvg: https://raw.githubusercontent.com/imagix-tech/status/master/favicon.svg
