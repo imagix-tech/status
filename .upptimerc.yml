@@ -40,8 +40,7 @@ status-website:
   faviconSvg: https://raw.githubusercontent.com/imagix-tech/status/master/favicon.svg
   name: Status Page
   introTitle: Welcome to the IMAGIX Service Status Page
-  introMessage: At IMAGIX, we are committed to providing reliable and seamless service for all your imaging needs. 
-  customHeadHtml: "<p>Our Service Status Page is designed to keep you informed about the current operational status of our systems and services.</p><p>Here, you will find real-time updates on any ongoing issues, scheduled maintenance, and overall system performance.</p><p>Our goal is to ensure transparency and provide you with timely information to minimize any disruption to your workflow.</p>"
+  introMessage: Here, you will find real-time updates on any ongoing issues, scheduled maintenance, and overall system performance.   
   navbar:
     - title: Status
       href: /
