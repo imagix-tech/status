@@ -9,13 +9,9 @@ sites:
     url: https://webmail.imagix.tech
   - name: Labs
     url: http://labs.imagix.tech:8080
-  - name: ODIN LB (Homologation)    
-    url: $ODIN_HOMOLOGACAO_LB        
-    __dangerous__insecure: true
-#  - name: VPN (Homologation)
-#    check: "udp-ping"
-#    url: $BIFROST_HOMOLOGACAO
-#    port: 1194   
+  - name: ODIN (Homologation)    
+    url: https://h-odin.imagix.tech
+    __dangerous__insecure: true 
   - name: DNS 1
     check: "tcp-ping"
     url: ns1-07.azure-dns.com
@@ -44,7 +40,8 @@ status-website:
   faviconSvg: https://raw.githubusercontent.com/imagix-tech/status/master/favicon.svg
   name: Status Page
   introTitle: Welcome to the IMAGIX Service Status Page
-  introMessage: At IMAGIX, we are committed to providing reliable and seamless service for all your imaging needs. Our Service Status Page is designed to keep you informed about the current operational status of our systems and services. Here, you will find real-time updates on any ongoing issues, scheduled maintenance, and overall system performance. Our goal is to ensure transparency and provide you with timely information to minimize any disruption to your workflow. 
+  introMessage: At IMAGIX, we are committed to providing reliable and seamless service for all your imaging needs. 
+  customHeadHtml: "<p>Our Service Status Page is designed to keep you informed about the current operational status of our systems and services.</p><p>Here, you will find real-time updates on any ongoing issues, scheduled maintenance, and overall system performance.</p><p>Our goal is to ensure transparency and provide you with timely information to minimize any disruption to your workflow.</p>"
   navbar:
     - title: Status
       href: /
