@@ -13,24 +13,24 @@ sites:
     url: $ODIN_HOMOLOGACAO_LB        
     __dangerous__insecure: true
   - name: VPN (Homologation)
-    check: "tcp-ping"
+    check: "udp-ping"
     url: $BIFROST_HOMOLOGACAO
-    port: 1194    
+    port: 1194   
   - name: DNS 1
     check: "tcp-ping"
-    url: dns1.xaonix.com
+    url: ns1-07.azure-dns.com
     port: 53
   - name: DNS 2
     check: "tcp-ping"
-    url: dns2.xaonix.com
+    url: ns2-07.azure-dns.net
     port: 53
   - name: DNS 3
     check: "tcp-ping"
-    url: dns3.xaonix.com
+    url: ns3-07.azure-dns.org
     port: 53
   - name: DNS 4
     check: "tcp-ping"
-    url: dns4.xaonix.com
+    url: ns4-07.azure-dns.info
     port: 53
 
 status-website:
@@ -38,7 +38,7 @@ status-website:
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   cname: status.imagix.tech
   # baseUrl: /
-  theme: light
+  theme: night
   logoUrl: https://raw.githubusercontent.com/imagix-tech/status/master/imagix.svg
   favicon: https://raw.githubusercontent.com/imagix-tech/status/master/favicon.ico
   faviconSvg: https://raw.githubusercontent.com/imagix-tech/status/master/favicon.svg
