@@ -4,7 +4,7 @@
     "url": "https://imagix.tech",
     "icon": "https://icons.duckduckgo.com/ip3/imagix.tech.ico",
     "slug": "website",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
@@ -13,7 +13,7 @@
     "time": 898,
     "timeDay": 958,
     "timeWeek": 912,
-    "timeMonth": 885,
+    "timeMonth": 887,
     "timeYear": 898,
     "dailyMinutesDown": {}
   },
