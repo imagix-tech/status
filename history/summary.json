@@ -12,7 +12,7 @@
     "uptimeYear": "100.00%",
     "time": 900,
     "timeDay": 700,
-    "timeWeek": 994,
+    "timeWeek": 981,
     "timeMonth": 906,
     "timeYear": 900,
     "dailyMinutesDown": {}
@@ -22,7 +22,7 @@
     "url": "https://webmail.imagix.tech",
     "icon": "https://icons.duckduckgo.com/ip3/webmail.imagix.tech.ico",
     "slug": "webmail",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
