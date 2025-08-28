@@ -7,11 +7,10 @@ sites:
     url: https://imagix.tech
   - name: Webmail
     url: https://webmail.imagix.tech
-  - name: Labs
-    url: http://labs.imagix.tech:8080
   - name: ODIN (Homologation)    
-    url: https://h-odin.imagix.tech
-    __dangerous__insecure: true 
+    url: https://hmg-app.demo.odin.imagix.tech
+  - name: BIFROST (Homologation)    
+    url: http://hmg-bifrost.demo.odin.imagix.tech/health    
   - name: DNS 1
     check: "tcp-ping"
     url: ns1-07.azure-dns.com
