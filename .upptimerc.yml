@@ -7,25 +7,31 @@ sites:
     url: https://imagix.tech
   - name: Webmail
     url: https://webmail.imagix.tech
+  - name: Suporte
+    url: https://suporte.imagix.tech    
   - name: ODIN (Homologation)    
     url: https://hmg-app.demo.odin.imagix.tech
+  - name: ODIN API (Homologation)    
+    url: http://hmg-api.demo.odin.imagix.tech/healthz   
   - name: BIFROST (Homologation)    
-    url: http://hmg-bifrost.demo.odin.imagix.tech/health    
+    url: https://hmg-app.demo.bifrost.imagix.tech    
+  - name: BIFROST API (Homologation)    
+    url: https://hmg-api.demo.bifrost.imagix.tech/health    
   - name: DNS 1
     check: "tcp-ping"
-    url: ns1-07.azure-dns.com
+    url: dns1.xaonix.com
     port: 53
   - name: DNS 2
     check: "tcp-ping"
-    url: ns2-07.azure-dns.net
+    url: dns2.xaonix.com
     port: 53
   - name: DNS 3
     check: "tcp-ping"
-    url: ns3-07.azure-dns.org
+    url: dns3.uni5.net
     port: 53
   - name: DNS 4
     check: "tcp-ping"
-    url: ns4-07.azure-dns.info
+    url: dns4.uni5.net
     port: 53
 
 status-website:
