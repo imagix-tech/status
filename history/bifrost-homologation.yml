@@ -1,7 +1,7 @@
 url: https://hmg-app.demo.bifrost.imagix.tech
-status: down
-code: 502
-responseTime: 712
-lastUpdated: 2026-01-21T23:22:59.602Z
+status: up
+code: 200
+responseTime: 1197
+lastUpdated: 2026-01-22T05:37:24.290Z
 startTime: 2025-08-28T19:25:15.376Z
 generator: Upptime <https://github.com/upptime/upptime>
