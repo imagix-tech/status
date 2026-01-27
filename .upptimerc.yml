@@ -16,7 +16,11 @@ sites:
   - name: BIFROST (Homologation)    
     url: https://hmg-app.demo.bifrost.imagix.tech    
   - name: BIFROST API (Homologation)    
-    url: https://hmg-api.demo.bifrost.imagix.tech/health    
+    url: https://hmg-api.demo.bifrost.imagix.tech/health
+  - name: ODIN App PoC
+    url: $APP_ODIN_POC
+  - name: BIFROST App PoC
+    url: $APP_BIFROST_POC    
   - name: DNS 1
     check: "tcp-ping"
     url: dns1.xaonix.com
