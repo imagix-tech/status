@@ -18,9 +18,13 @@ sites:
   - name: BIFROST API (Homologation)    
     url: https://hmg-api.demo.bifrost.imagix.tech/health
   - name: ODIN App PoC
+    check: "tcp-ping"    
     url: $APP_ODIN_POC
+    port: 22
   - name: BIFROST App PoC
+    check: "tcp-ping"
     url: $APP_BIFROST_POC    
+    port: 22
   - name: DNS 1
     check: "tcp-ping"
     url: dns1.xaonix.com
