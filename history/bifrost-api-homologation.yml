@@ -1,7 +1,7 @@
 url: https://hmg-api.demo.bifrost.imagix.tech/health
-status: down
-code: 0
-responseTime: 0
-lastUpdated: 2026-02-22T17:15:04.857Z
+status: up
+code: 200
+responseTime: 732
+lastUpdated: 2026-02-22T17:41:38.257Z
 startTime: 2025-10-04T03:55:35.818Z
 generator: Upptime <https://github.com/upptime/upptime>
