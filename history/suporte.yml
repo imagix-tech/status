@@ -1,7 +1,7 @@
 url: https://suporte.imagix.tech
-status: up
-code: 200
-responseTime: 1911
-lastUpdated: 2026-02-24T23:29:02.349Z
+status: down
+code: 503
+responseTime: 1451
+lastUpdated: 2026-02-25T12:54:35.046Z
 startTime: 2025-10-04T03:55:31.632Z
 generator: Upptime <https://github.com/upptime/upptime>
