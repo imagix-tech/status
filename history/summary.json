@@ -13,7 +13,7 @@
     "time": 913,
     "timeDay": 918,
     "timeWeek": 961,
-    "timeMonth": 902,
+    "timeMonth": 906,
     "timeYear": 907,
     "dailyMinutesDown": {}
   },
@@ -31,7 +31,7 @@
     "time": 1249,
     "timeDay": 1109,
     "timeWeek": 1226,
-    "timeMonth": 1204,
+    "timeMonth": 1208,
     "timeYear": 1184,
     "dailyMinutesDown": {}
   },
@@ -49,7 +49,7 @@
     "time": 1153,
     "timeDay": 1067,
     "timeWeek": 1127,
-    "timeMonth": 1203,
+    "timeMonth": 1209,
     "timeYear": 1153,
     "dailyMinutesDown": {}
   },
@@ -67,7 +67,7 @@
     "time": 995,
     "timeDay": 853,
     "timeWeek": 870,
-    "timeMonth": 894,
+    "timeMonth": 895,
     "timeYear": 937,
     "dailyMinutesDown": {}
   },
@@ -121,7 +121,7 @@
     "time": 786,
     "timeDay": 801,
     "timeWeek": 755,
-    "timeMonth": 763,
+    "timeMonth": 764,
     "timeYear": 786,
     "dailyMinutesDown": {}
   },
@@ -130,7 +130,7 @@
     "url": "$APP_ODIN_POC",
     "icon": "https://icons.duckduckgo.com/ip3/null.ico",
     "slug": "odin-app-po-c",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
@@ -139,7 +139,7 @@
     "time": 1113,
     "timeDay": 15168,
     "timeWeek": 5137,
-    "timeMonth": 1571,
+    "timeMonth": 1584,
     "timeYear": 1113,
     "dailyMinutesDown": {}
   },
@@ -157,7 +157,7 @@
     "time": 347,
     "timeDay": 628,
     "timeWeek": 682,
-    "timeMonth": 441,
+    "timeMonth": 443,
     "timeYear": 347,
     "dailyMinutesDown": {}
   },
@@ -193,7 +193,7 @@
     "time": 32,
     "timeDay": 2,
     "timeWeek": 85,
-    "timeMonth": 101,
+    "timeMonth": 104,
     "timeYear": 44,
     "dailyMinutesDown": {}
   },
@@ -211,7 +211,7 @@
     "time": 4,
     "timeDay": 2,
     "timeWeek": 7,
-    "timeMonth": 7,
+    "timeMonth": 6,
     "timeYear": 5,
     "dailyMinutesDown": {}
   },
@@ -229,7 +229,7 @@
     "time": 4,
     "timeDay": 2,
     "timeWeek": 7,
-    "timeMonth": 7,
+    "timeMonth": 6,
     "timeYear": 4,
     "dailyMinutesDown": {}
   }
