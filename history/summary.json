@@ -4,7 +4,7 @@
     "url": "https://imagix.tech",
     "icon": "https://icons.duckduckgo.com/ip3/imagix.tech.ico",
     "slug": "website",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
@@ -40,7 +40,7 @@
     "url": "https://suporte.imagix.tech",
     "icon": "https://icons.duckduckgo.com/ip3/suporte.imagix.tech.ico",
     "slug": "suporte",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
@@ -84,7 +84,7 @@
     "uptimeYear": "100.00%",
     "time": 523,
     "timeDay": 603,
-    "timeWeek": 526,
+    "timeWeek": 529,
     "timeMonth": 519,
     "timeYear": 523,
     "dailyMinutesDown": {}
@@ -102,7 +102,7 @@
     "uptimeYear": "100.00%",
     "time": 832,
     "timeDay": 916,
-    "timeWeek": 889,
+    "timeWeek": 890,
     "timeMonth": 871,
     "timeYear": 832,
     "dailyMinutesDown": {}
@@ -120,7 +120,7 @@
     "uptimeYear": "100.00%",
     "time": 785,
     "timeDay": 881,
-    "timeWeek": 773,
+    "timeWeek": 777,
     "timeMonth": 760,
     "timeYear": 785,
     "dailyMinutesDown": {}
@@ -138,7 +138,7 @@
     "uptimeYear": "100.00%",
     "time": 1096,
     "timeDay": 828,
-    "timeWeek": 3825,
+    "timeWeek": 3479,
     "timeMonth": 1637,
     "timeYear": 1096,
     "dailyMinutesDown": {}
@@ -156,7 +156,7 @@
     "uptimeYear": "100.00%",
     "time": 409,
     "timeDay": 761,
-    "timeWeek": 719,
+    "timeWeek": 716,
     "timeMonth": 558,
     "timeYear": 409,
     "dailyMinutesDown": {}
