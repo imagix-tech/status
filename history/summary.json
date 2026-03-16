@@ -66,7 +66,7 @@
     "uptimeYear": "100.00%",
     "time": 1000,
     "timeDay": 896,
-    "timeWeek": 885,
+    "timeWeek": 888,
     "timeMonth": 881,
     "timeYear": 931,
     "dailyMinutesDown": {}
@@ -84,7 +84,7 @@
     "uptimeYear": "100.00%",
     "time": 523,
     "timeDay": 523,
-    "timeWeek": 528,
+    "timeWeek": 533,
     "timeMonth": 515,
     "timeYear": 523,
     "dailyMinutesDown": {}
@@ -102,7 +102,7 @@
     "uptimeYear": "100.00%",
     "time": 833,
     "timeDay": 966,
-    "timeWeek": 884,
+    "timeWeek": 885,
     "timeMonth": 875,
     "timeYear": 833,
     "dailyMinutesDown": {}
@@ -120,7 +120,7 @@
     "uptimeYear": "100.00%",
     "time": 786,
     "timeDay": 874,
-    "timeWeek": 793,
+    "timeWeek": 797,
     "timeMonth": 765,
     "timeYear": 786,
     "dailyMinutesDown": {}
@@ -130,17 +130,17 @@
     "url": "$APP_ODIN_POC",
     "icon": "https://icons.duckduckgo.com/ip3/null.ico",
     "slug": "odin-app-po-c",
-    "status": "down",
+    "status": "up",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 1099,
-    "timeDay": 1150,
-    "timeWeek": 2157,
-    "timeMonth": 1652,
-    "timeYear": 1099,
+    "time": 1097,
+    "timeDay": 1082,
+    "timeWeek": 1338,
+    "timeMonth": 1645,
+    "timeYear": 1097,
     "dailyMinutesDown": {}
   },
   {
@@ -156,7 +156,7 @@
     "uptimeYear": "100.00%",
     "time": 412,
     "timeDay": 605,
-    "timeWeek": 711,
+    "timeWeek": 719,
     "timeMonth": 565,
     "timeYear": 412,
     "dailyMinutesDown": {}
