@@ -67,7 +67,7 @@
     "time": 988,
     "timeDay": 0,
     "timeWeek": 0,
-    "timeMonth": 877,
+    "timeMonth": 875,
     "timeYear": 906,
     "dailyMinutesDown": {}
   },
@@ -85,7 +85,7 @@
     "time": 522,
     "timeDay": 0,
     "timeWeek": 0,
-    "timeMonth": 519,
+    "timeMonth": 516,
     "timeYear": 522,
     "dailyMinutesDown": {}
   },
@@ -103,7 +103,7 @@
     "time": 836,
     "timeDay": 769,
     "timeWeek": 883,
-    "timeMonth": 860,
+    "timeMonth": 853,
     "timeYear": 836,
     "dailyMinutesDown": {}
   },
@@ -121,7 +121,7 @@
     "time": 782,
     "timeDay": 760,
     "timeWeek": 790,
-    "timeMonth": 766,
+    "timeMonth": 757,
     "timeYear": 782,
     "dailyMinutesDown": {}
   },
@@ -130,7 +130,7 @@
     "url": "$APP_ODIN_POC",
     "icon": "https://icons.duckduckgo.com/ip3/null.ico",
     "slug": "odin-app-po-c",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
@@ -139,7 +139,7 @@
     "time": 1006,
     "timeDay": 752,
     "timeWeek": 801,
-    "timeMonth": 822,
+    "timeMonth": 804,
     "timeYear": 1006,
     "dailyMinutesDown": {}
   },
@@ -157,7 +157,7 @@
     "time": 480,
     "timeDay": 592,
     "timeWeek": 675,
-    "timeMonth": 664,
+    "timeMonth": 665,
     "timeYear": 480,
     "dailyMinutesDown": {}
   },
