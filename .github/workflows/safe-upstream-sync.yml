@@ -1,0 +1,127 @@
+name: Safe Upstream Sync
+
+on:
+  schedule:
+    - cron: "0 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: safe-upstream-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      BASE_BRANCH: master
+      SYNC_BRANCH: chore/sync-upstream
+      UPSTREAM_REPO: https://github.com/upptime/upptime.git
+      DEMO_SLUGS: google wikipedia hacker-news test-broken-site i-pv6-test
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.BASE_BRANCH }}
+          fetch-depth: 0
+          token: ${{ secrets.GH_PAT || github.token }}
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Merge upstream safely
+        id: sync
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git checkout -B "$SYNC_BRANCH" "origin/$BASE_BRANCH"
+
+          if git remote get-url upstream >/dev/null 2>&1; then
+            git remote set-url upstream "$UPSTREAM_REPO"
+          else
+            git remote add upstream "$UPSTREAM_REPO"
+          fi
+
+          git fetch upstream master
+
+          merge_exit=0
+          git merge --no-commit --no-ff upstream/master || merge_exit=$?
+
+          # Preserve local configuration and generated summary content.
+          for path in .upptimerc.yml README.md history/summary.json; do
+            if git ls-files --error-unmatch "$path" >/dev/null 2>&1; then
+              git checkout --ours -- "$path" || true
+              git add "$path"
+            fi
+          done
+
+          # Remove demo assets that belong to the upstream template, not this fork.
+          for slug in $DEMO_SLUGS; do
+            if [ -d "api/$slug" ]; then
+              git rm -r --ignore-unmatch "api/$slug"
+            fi
+            if [ -d "graphs/$slug" ]; then
+              git rm -r --ignore-unmatch "graphs/$slug"
+            fi
+            git rm --ignore-unmatch "history/$slug.yml"
+          done
+
+          if [ -n "$(git diff --name-only --diff-filter=U)" ]; then
+            echo "Unresolved merge conflicts remain:"
+            git diff --name-only --diff-filter=U
+            git merge --abort || true
+            exit 1
+          fi
+
+          if git diff --quiet --cached && git diff --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git commit -m "Sync upstream/master safely"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Push sync branch
+        if: steps.sync.outputs.changed == 'true'
+        run: |
+          git push --force-with-lease origin "${SYNC_BRANCH}"
+
+      - name: Create or update pull request
+        if: steps.sync.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT || github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          pr_number="$(gh pr list \
+            --base "$BASE_BRANCH" \
+            --head "$SYNC_BRANCH" \
+            --json number \
+            --jq '.[0].number')"
+
+          if [ -n "$pr_number" ]; then
+            echo "Pull request #$pr_number already exists."
+            exit 0
+          fi
+
+          gh pr create \
+            --base "$BASE_BRANCH" \
+            --head "$SYNC_BRANCH" \
+            --title "Sync upstream/master safely" \
+            --body "Automated upstream sync PR.
+
+This workflow merges the latest changes from \`upptime/upptime\` into this fork while preserving the local \`.upptimerc.yml\` and excluding the standard Upptime demo monitors."
