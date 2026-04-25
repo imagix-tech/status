@@ -13,7 +13,7 @@ sites:
   - name: ODIN (Homologation)    
     url: https://hmg-app.demo.odin.imagix.tech
     type: globalping
-    __dangerous__body_down_if_text_missing: "Sua plataforma para"
+    __dangerous__body_down_if_text_missing: "_next/static"
   - name: ODIN API (Homologation)    
     url: https://hmg-app.demo.odin.imagix.tech/api/healthz
     expectedStatusCodes:
