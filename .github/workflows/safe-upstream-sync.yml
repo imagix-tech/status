@@ -118,10 +118,10 @@ jobs:
             exit 0
           fi
 
+          pr_body=$'Automated upstream sync PR.\n\nThis workflow merges the latest changes from upptime/upptime into this fork while preserving the local .upptimerc.yml and excluding the standard Upptime demo monitors.'
+
           gh pr create \
             --base "$BASE_BRANCH" \
             --head "$SYNC_BRANCH" \
             --title "Sync upstream/master safely" \
-            --body "Automated upstream sync PR.
-
-This workflow merges the latest changes from \`upptime/upptime\` into this fork while preserving the local \`.upptimerc.yml\` and excluding the standard Upptime demo monitors."
+            --body "$pr_body"
