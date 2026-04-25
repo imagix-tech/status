@@ -12,14 +12,25 @@ sites:
     url: https://suporte.imagix.tech    
   - name: ODIN (Homologation)    
     url: https://hmg-app.demo.odin.imagix.tech
+    type: globalping
+    __dangerous__body_down_if_text_missing: "Sua plataforma para"
   - name: ODIN API (Homologation)    
-    url: http://hmg-api.demo.odin.imagix.tech/healthz   
+    url: http://hmg-api.demo.odin.imagix.tech/healthz
+    expectedStatusCodes:
+      - 200
   - name: BIFROST (Homologation)    
-    url: https://hmg-app.demo.bifrost.imagix.tech    
+    url: https://hmg-app.demo.bifrost.imagix.tech
+    type: globalping
+    __dangerous__body_down_if_text_missing: "BIFROST"
   - name: BIFROST API (Homologation)    
     url: https://hmg-api.demo.bifrost.imagix.tech/health
+    expectedStatusCodes:
+      - 200
+    __dangerous__body_down_if_text_missing: '"status":"healthy"'
   - name: DICOM-Metrics    
-    url: https://dicom-metrics.imagix.tech    
+    url: https://dicom-metrics.imagix.tech
+    type: globalping
+    __dangerous__body_down_if_text_missing: "DICOM"
   - name: DNS 1
     check: "tcp-ping"
     url: dns1.xaonix.com
