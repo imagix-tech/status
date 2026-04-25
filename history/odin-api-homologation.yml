@@ -1,7 +1,7 @@
-url: http://hmg-api.demo.odin.imagix.tech/healthz
+url: https://hmg-app.demo.odin.imagix.tech/api/healthz
 status: up
 code: 200
-responseTime: 560
-lastUpdated: 2026-04-25T13:42:38.394Z
+responseTime: 709
+lastUpdated: 2026-04-25T13:44:45.263Z
 startTime: 2025-10-04T03:55:33.736Z
 generator: Upptime <https://github.com/upptime/upptime>
