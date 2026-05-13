@@ -13,8 +13,8 @@
     "time": 930,
     "timeDay": 747,
     "timeWeek": 2439,
-    "timeMonth": 1254,
-    "timeYear": 928,
+    "timeMonth": 1253,
+    "timeYear": 927,
     "dailyMinutesDown": {}
   },
   {
@@ -66,7 +66,7 @@
     "uptimeYear": "100.00%",
     "time": 988,
     "timeDay": 1410,
-    "timeWeek": 1881,
+    "timeWeek": 2049,
     "timeMonth": 1464,
     "timeYear": 922,
     "dailyMinutesDown": {}
@@ -76,7 +76,7 @@
     "url": "https://hmg-app.demo.odin.imagix.tech/api/healthz",
     "icon": "https://icons.duckduckgo.com/ip3/hmg-app.demo.odin.imagix.tech.ico",
     "slug": "odin-api-homologation",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
@@ -84,7 +84,7 @@
     "uptimeYear": "100.00%",
     "time": 543,
     "timeDay": 778,
-    "timeWeek": 846,
+    "timeWeek": 832,
     "timeMonth": 859,
     "timeYear": 543,
     "dailyMinutesDown": {}
@@ -102,8 +102,8 @@
     "uptimeYear": "100.00%",
     "time": 839,
     "timeDay": 1191,
-    "timeWeek": 1277,
-    "timeMonth": 886,
+    "timeWeek": 1231,
+    "timeMonth": 882,
     "timeYear": 839,
     "dailyMinutesDown": {}
   },
@@ -112,7 +112,7 @@
     "url": "https://hmg-api.demo.bifrost.imagix.tech/health",
     "icon": "https://icons.duckduckgo.com/ip3/hmg-api.demo.bifrost.imagix.tech.ico",
     "slug": "bifrost-api-homologation",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
@@ -120,8 +120,8 @@
     "uptimeYear": "100.00%",
     "time": 785,
     "timeDay": 985,
-    "timeWeek": 848,
-    "timeMonth": 807,
+    "timeWeek": 860,
+    "timeMonth": 806,
     "timeYear": 785,
     "dailyMinutesDown": {}
   },
@@ -138,7 +138,7 @@
     "uptimeYear": "100.00%",
     "time": 912,
     "timeDay": 1313,
-    "timeWeek": 1081,
+    "timeWeek": 1094,
     "timeMonth": 912,
     "timeYear": 912,
     "dailyMinutesDown": {}
