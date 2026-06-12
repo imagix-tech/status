@@ -14,7 +14,7 @@
     "timeDay": 1091,
     "timeWeek": 874,
     "timeMonth": 858,
-    "timeYear": 928,
+    "timeYear": 929,
     "dailyMinutesDown": {}
   },
   {
@@ -76,7 +76,7 @@
     "url": "https://hmg-app.demo.odin.imagix.tech/api/healthz",
     "icon": "https://icons.duckduckgo.com/ip3/hmg-app.demo.odin.imagix.tech.ico",
     "slug": "odin-api-homologation",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
@@ -84,7 +84,7 @@
     "uptimeYear": "100.00%",
     "time": 570,
     "timeDay": 759,
-    "timeWeek": 840,
+    "timeWeek": 838,
     "timeMonth": 879,
     "timeYear": 570,
     "dailyMinutesDown": {}
@@ -112,7 +112,7 @@
     "url": "https://hmg-api.demo.bifrost.imagix.tech/health",
     "icon": "https://icons.duckduckgo.com/ip3/hmg-api.demo.bifrost.imagix.tech.ico",
     "slug": "bifrost-api-homologation",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
@@ -120,7 +120,7 @@
     "uptimeYear": "100.00%",
     "time": 787,
     "timeDay": 780,
-    "timeWeek": 815,
+    "timeWeek": 823,
     "timeMonth": 825,
     "timeYear": 787,
     "dailyMinutesDown": {}
