@@ -3,35 +3,56 @@ owner: imagix-tech # Your GitHub organization or username, where this repository
 repo: status # The name of this repository
 user-agent: imagix-tech-status
 
+# Secrets que o workflow entrega à action do Upptime. Sem esta lista, o
+# workflow gerado passa uma lista longa de nomes padrão do Upptime.
+secrets:
+  - NOTIFICATION_DISCORD_WEBHOOK_URL
+
 sites:
+  # Hospedagem compartilhada da KingHost
   - name: Website
     url: https://imagix.tech
   - name: Webmail
     url: https://webmail.imagix.tech
   - name: Suporte
-    url: https://suporte.imagix.tech    
-  - name: ODIN (Homologation)    
-    url: https://hmg-app.demo.odin.imagix.tech
+    url: https://suporte.imagix.tech
+
+  # VPS hmg-app (72.60.0.44)
+  - name: ODIN
+    url: https://odin.imagix.tech
     type: globalping
-    __dangerous__body_down_if_text_missing: "_next/static"
-  - name: ODIN API (Homologation)    
-    url: https://hmg-app.demo.odin.imagix.tech/api/healthz
+    __dangerous__body_down_if_text_missing: "<title>ODIN 2"
+  # Sem login, o control-plane responde 401 em JSON. Se ele cair, o nginx
+  # do web-app devolve 502.
+  - name: ODIN API
+    url: https://odin.imagix.tech/auth/me
     expectedStatusCodes:
-      - 200
-    __dangerous__body_down_if_text_missing: "OK"
-  - name: BIFROST (Homologation)    
-    url: https://hmg-app.demo.bifrost.imagix.tech
-    type: globalping
-    __dangerous__body_down_if_text_missing: "BIFROST"
-  - name: BIFROST API (Homologation)    
-    url: https://hmg-api.demo.bifrost.imagix.tech/health
-    expectedStatusCodes:
-      - 200
-    __dangerous__body_down_if_text_missing: '"status":"healthy"'
-  - name: DICOM-Metrics    
+      - 401
+    __dangerous__body_down_if_text_missing: "no active session"
+  - name: ODIN Collaboration
+    url: https://odin.imagix.tech/collaboration/?EIO=4&transport=polling
+    __dangerous__body_down_if_text_missing: '"sid"'
+  - name: ODIN TURN
+    check: "tcp-ping"
+    url: odin.imagix.tech
+    port: 3478
+  - name: I2dP
+    url: https://id.imagix.tech/healthz
+    __dangerous__body_down_if_text_missing: '"status":"ok"'
+  - name: DICOM-Metrics
     url: https://dicom-metrics.imagix.tech
     type: globalping
     __dangerous__body_down_if_text_missing: "DICOM"
+  - name: DICOM-Metrics API
+    url: https://dicom-metrics.imagix.tech/api/health
+    __dangerous__body_down_if_text_missing: '"status":"healthy"'
+
+  # VPS elarion (72.60.0.43)
+  - name: MRI-Simulator
+    url: https://mri-simulator.imagix.tech/healthz
+    __dangerous__body_down_if_regex_missing: "^ok "
+
+  # DNS
   - name: DNS 1
     check: "tcp-ping"
     url: dns1.xaonix.com
@@ -60,7 +81,7 @@ status-website:
   faviconSvg: https://raw.githubusercontent.com/imagix-tech/status/master/favicon.svg
   name: Status Page
   introTitle: Welcome to the IMAGIX Service Status Page
-  introMessage: Here, you will find real-time updates on any ongoing issues, scheduled maintenance, and overall system performance.   
+  introMessage: Here, you will find real-time updates on any ongoing issues, scheduled maintenance, and overall system performance.
   navbar:
     - title: Status
       href: /
