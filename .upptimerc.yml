@@ -9,21 +9,17 @@ secrets:
   - NOTIFICATION_DISCORD_WEBHOOK_URL
 
 sites:
-  # Hospedagem compartilhada da KingHost
   - name: Website
     url: https://imagix.tech
   - name: Webmail
     url: https://webmail.imagix.tech
   - name: Suporte
     url: https://suporte.imagix.tech
-
-  # VPS hmg-app (72.60.0.44)
   - name: ODIN
     url: https://odin.imagix.tech
     type: globalping
     __dangerous__body_down_if_text_missing: "<title>ODIN 2"
-  # Sem login, o control-plane responde 401 em JSON. Se ele cair, o nginx
-  # do web-app devolve 502.
+  # Sem login, a API responde 401; qualquer outro código indica falha.
   - name: ODIN API
     url: https://odin.imagix.tech/auth/me
     expectedStatusCodes:
@@ -46,11 +42,11 @@ sites:
   - name: DICOM-Metrics API
     url: https://dicom-metrics.imagix.tech/api/health
     __dangerous__body_down_if_text_missing: '"status":"healthy"'
-
-  # VPS elarion (72.60.0.43)
   - name: MRI-Simulator
     url: https://mri-simulator.imagix.tech/healthz
-    __dangerous__body_down_if_regex_missing: "^ok "
+    # O Upptime analisa a resposta com os cabeçalhos HTTP na frente, então o
+    # corpo começa depois de uma quebra de linha.
+    __dangerous__body_down_if_regex_missing: "\nok "
 
   # DNS
   - name: DNS 1
